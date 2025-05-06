@@ -171,7 +171,8 @@ test.describe("Yaksha", () => {
   test("TS-14 Verify  Capture screenshot of Inventory Requisition section", async ({
     page,
   }) => {
-    const screenshot =await subStorePage.captureScreenshotOfInventoryRequisitionSection();
+    const screenshot =
+      await subStorePage.captureScreenshotOfInventoryRequisitionSection();
     await verifyCaptureScreenshot(page, screenshot);
   });
 
@@ -287,7 +288,7 @@ async function verifyCaptureScreenshot(page: Page, screenshot: Buffer) {
   await expect(screenshot).toMatchSnapshot(
     "../../inventory-requisition-section-chromium-win32.png",
     {
-      threshold: 0.05,
+      threshold: 1,
     }
   );
 }

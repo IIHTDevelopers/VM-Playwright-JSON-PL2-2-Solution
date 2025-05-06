@@ -40,7 +40,7 @@ export default class NursingPage {
   }
 
   /**
-   * @Test2 Verify Navigation to Patient Overview from Past Days Records 
+   * @Test2 Verify Navigation to Patient Overview from Past Days Records
    *
    * @param {Record<string, string>} data - Not used in this method but typically used to pass additional parameters if needed.
    * @returns {Promise<void>} - Returns void; logs error if any step fails.
@@ -124,6 +124,7 @@ export default class NursingPage {
       const fileName = "inventory_requisition_section.png";
       const filePath = path.resolve(__dirname, `../../screenshots/${fileName}`);
       await this.upload_file.setInputFiles(filePath);
+      await this.page.waitForTimeout(5000);
       await this.submit_button.click();
     } catch (error) {
       console.error("Error during file upload:", error);

@@ -101,16 +101,16 @@ export default class SubstorePage {
   }
 
   /**
- * @Test13 Navigate to the Accounts section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Accounts section is loaded.
- *
- * Steps:
- * 1. Highlight the "Accounts" link or button for visual confirmation.
- * 2. Click on the "Accounts" element to initiate navigation.
- * 3. Wait for the page to fully load after navigation.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Navigate to the Accounts section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Accounts section is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Accounts" link or button for visual confirmation.
+   * 2. Click on the "Accounts" element to initiate navigation.
+   * 3. Wait for the page to fully load after navigation.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async navigateToAccounts() {
     await CommonMethods.highlightElement(this.accounts);
     await this.accounts.click();
@@ -119,16 +119,16 @@ export default class SubstorePage {
   }
 
   /**
- * @Test13 Verify navigation to the Stock section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Stock page is loaded.
- *
- * Steps:
- * 1. Highlight the "Stock" element for visual confirmation.
- * 2. Click on the "Stock" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Verify navigation to the Stock section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Stock page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Stock" element for visual confirmation.
+   * 2. Click on the "Stock" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToStock() {
     await CommonMethods.highlightElement(this.stock);
     await this.stock.click();
@@ -137,16 +137,16 @@ export default class SubstorePage {
   }
 
   /**
- * @Test13 Verify navigation to the Inventory Requisition section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Inventory Requisition page is loaded.
- *
- * Steps:
- * 1. Highlight the "Inventory Requisition" element for visual confirmation.
- * 2. Click on the "Inventory Requisition" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Verify navigation to the Inventory Requisition section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Inventory Requisition page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Inventory Requisition" element for visual confirmation.
+   * 2. Click on the "Inventory Requisition" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToInventoryRequisition() {
     await CommonMethods.highlightElement(this.inventoryRequisition);
     await this.inventoryRequisition.click();
@@ -155,16 +155,16 @@ export default class SubstorePage {
   }
 
   /**
- * @Test13 Verify navigation to the Consumptions section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Consumptions page is loaded.
- *
- * Steps:
- * 1. Highlight the "Consumptions" element for visual confirmation.
- * 2. Click on the "Consumptions" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Verify navigation to the Consumptions section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Consumptions page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Consumptions" element for visual confirmation.
+   * 2. Click on the "Consumptions" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToConsumptions() {
     await CommonMethods.highlightElement(this.consumption);
     await this.consumption.click();
@@ -172,18 +172,17 @@ export default class SubstorePage {
     await this.page.waitForTimeout(1000);
   }
 
-
   /**
- * @Test13 Verify navigation to the Reports section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Reports page is loaded.
- *
- * Steps:
- * 1. Highlight the "Reports" element for visual confirmation.
- * 2. Click on the "Reports" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Verify navigation to the Reports section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Reports page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Reports" element for visual confirmation.
+   * 2. Click on the "Reports" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToReports() {
     await CommonMethods.highlightElement(this.reports);
     await this.reports.click();
@@ -192,16 +191,16 @@ export default class SubstorePage {
   }
 
   /**
- * @Test13 Verify navigation to the Patient Consumptions section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Patient Consumptions page is loaded.
- *
- * Steps:
- * 1. Highlight the "Patient Consumptions" element for visual confirmation.
- * 2. Click on the "Patient Consumptions" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test13 Verify navigation to the Patient Consumptions section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Patient Consumptions page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Patient Consumptions" element for visual confirmation.
+   * 2. Click on the "Patient Consumptions" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToPatientConsumptions() {
     await CommonMethods.highlightElement(this.patientConsumption);
     await this.patientConsumption.click();
@@ -209,18 +208,17 @@ export default class SubstorePage {
     await this.page.waitForTimeout(1000);
   }
 
-
   /**
- * @Test Verify navigation to the Return section.
- *
- * @returns {Promise<void>} - Returns void; ensures the Return page is loaded.
- *
- * Steps:
- * 1. Highlight the "Return" element for visual confirmation.
- * 2. Click on the "Return" link or button to initiate navigation.
- * 3. Wait for the page to fully load after the action.
- * 4. Pause execution for 1 second to ensure the section is ready for interaction.
- */
+   * @Test Verify navigation to the Return section.
+   *
+   * @returns {Promise<void>} - Returns void; ensures the Return page is loaded.
+   *
+   * Steps:
+   * 1. Highlight the "Return" element for visual confirmation.
+   * 2. Click on the "Return" link or button to initiate navigation.
+   * 3. Wait for the page to fully load after the action.
+   * 4. Pause execution for 1 second to ensure the section is ready for interaction.
+   */
   async verifyNavigationToReturn() {
     await CommonMethods.highlightElement(this.return);
     await this.return.click();
@@ -251,6 +249,7 @@ export default class SubstorePage {
     const screenshot = await this.page.screenshot({
       path: "inventoryRequisition.png",
     });
+    await this.page.waitForTimeout(2000);
     return screenshot;
   }
 }
